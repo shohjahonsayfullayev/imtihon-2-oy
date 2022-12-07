@@ -361,7 +361,6 @@ body {
   font-family: "Lexend Deca", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
 }
 
 main {
@@ -531,4 +530,55 @@ a {
 }
 .hero .hero__button {
   margin-top: 40px;
+}
+.about {
+  margin-bottom: 200px;
+}
+.about .about__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__list:nth-child(3) {
+  margin-right: 0;
+}
+.about .abouit__item {
+  margin-right: 30px;
+}
+.about .about__img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+}
+.about .about__item-left {
+  max-width: 350px;
+}
+.about .about__hiddin {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+.about .about__text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.about .about__span {
+  display: block;
+  width: 974px;
+  height: 1px;
+  background-color: #E5ECF4;
+  border: 5px solid #E5ECF4;
+  position: absolute;
+  top: 50px;
+  left: -140px;
+  z-index: -8;
 }/*# sourceMappingURL=main.css.map */
