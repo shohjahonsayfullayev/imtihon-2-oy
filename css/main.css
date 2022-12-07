@@ -432,7 +432,7 @@ a {
   line-height: 25px;
   color: #939CAA;
 }
-.header .button {
+.button {
   min-width: 180px;
   max-width: 250px;
   background: none;
@@ -448,19 +448,73 @@ a {
   cursor: pointer;
   border: 3px solid transparent;
 }
-.header .button:hover {
+
+.button:hover {
   background-color: white;
   border: 3px solid #FCB72B;
   color: #FCB72B;
   transition: all 0.4s ease;
 }
 
-.hero .hero__inner {
+.hero .hero__container {
   max-width: 1440px;
-  width: 100%;
-  height: 600px;
-  background-image: url(./../../image/bgimg_hero.png);
+  min-height: 600px;
+  margin: 0 auto;
+  background-image: url(./../../image/herobgimg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto;
+}
+.hero .hero__wrapper {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.hero .hero__box {
+  max-width: 500px;
+}
+.hero .hero__hiddin {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.hero .hero__fox {
+  position: relative;
+  max-width: 500px;
+  margin-left: 94px;
+}
+.hero .hero__text::before {
+  width: 202px;
+  content: " ";
+  background-image: url(./../../image/strelka1.svg);
+  position: absolute;
+  left: -50%;
+  top: 20%;
+  height: 15px;
+}
+.hero .hero__text::after {
+  width: 460px;
+  content: " ";
+  background-image: url(./../../image/strelka2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 18%;
+  right: -100%;
+  height: 140px;
+}
+.hero .hero__text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.hero .hero__button {
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */

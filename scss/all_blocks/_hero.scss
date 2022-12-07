@@ -1,19 +1,73 @@
 .hero {
-    .hero__wrapper {
-
-    }
-
-    .hero__inner {
-        max-width: 1440px;
-        width: 100%;
-        height: 600px;
-        background-image: url(./../../image/bgimg_hero.png);
+    .hero__container {
+        max-width:  1440px;
+        min-height: 600px;
+        margin: 0 auto;
+        background-image: url(./../../image/herobgimg.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        margin: 0 auto;
-
+       
+    }
+    .hero__wrapper {
+        display: flex;
+        align-items: center;
+        height: 600px;
+    }
+    .container {
+    }
+    .hero__inner {
+    }
+    .hero__box {
+        max-width: 500px;
+    }
+    .hero__hiddin {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    .hero__fox {
+        position: relative;
+        max-width: 500px;
+        margin-left: 94px;
     }
 
-    .hero__container {
+    .hero__text::before{
+        width: 202px;
+        content: " ";
+        background-image: url(./../../image/strelka1.svg);
+        position: absolute;
+        left: -50%;
+        top: 20%;
+        height:15px;
+    }
+
+    .hero__text::after{
+        width: 460px;
+        content: " ";
+        background-image: url(./../../image/strelka2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 18%;
+        right: -100%;
+        height: 140px;
+    }
+    .hero__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .hero__button {
+        margin-top: 40px;
+    }
+    .button {
     }
 }
