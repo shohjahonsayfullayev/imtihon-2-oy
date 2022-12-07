@@ -1,148 +1,79 @@
 .header {
-    padding-top: 48px;
-    
-    &__container {
-    }
-    
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    &__logo {
-        margin-right: 80px;
-    }
-    
-    &__logo-img {
-    }
-    
-    &__btn, &__btn-close {
-        background: none;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        width: 20px;
-        height: 17px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    &__burger, &__close {
-        width: 20px;
-        height: 17px;
-        object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    .container {
     }
 
-    &__btn {
-        @media only screen and (min-width: 600px) {
-            display: none;
-        }
-    }
-    
-    
-    
-    
-    
-    
-    &__right {
-        position: absolute;
-        top: -200%;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(1, 77, 86, 0.3);
+    .header__container {
         display: flex;
-        justify-content: flex-end;
-        transition: all 1s ease;
-        
-        @media only screen and (min-width: 600px) {
-            position: static;
-            max-width: 870px;
-            width: 100%;
-            height: auto;
-        }
+        align-items: center;
     }
-    
-    &__nav {
-        background-color: #255257;
-        max-width: 255px;
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        max-width: 1110px;
         width: 100%;
-        padding: 56px 25px 25px 48px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    }
+
+    .header__logo-img {
+    }
+
+    .header__img-logo {
+        margin-right: 58px;
+    }
+
+    .header__nav {
         
-        @media only screen and (min-width: 600px) {
-            padding: 0;
-            flex-direction: row;
-            background: none;
-            max-width: 870px;
-            align-items: center;
-            justify-content: space-between;
-        }
     }
-    
-    &__btn-close {
-        margin-bottom: 39px;
-        align-self: flex-end;
 
-        @media only screen and (min-width: 600px) {
-            display: none;
-        }
-    }
-    
-    &__close {
-    }
-    
-    &__list {
+    .header__list {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 36px;
-
-        @media only screen and (min-width: 600px) {
-            flex-direction: row;
-            margin: 0;
-        }
     }
-    
-    &__item {
-        & + & {
-            margin-top: 24px;
 
-            @media only screen and (min-width: 600px) {
-                margin: 0;
-                margin-left: 40px;
-            }
-        }
+    .header__item {
+        margin-right: 32px;
     }
-    
-    &__link {
+
+
+    .header__item-m0{
+        margin-right: 0;
+    }
+
+    .header__link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+    .header__button {
+        
+    }
+
+    .button{
+        min-width: 180px;
+        max-width: 250px;
+        background: none;
+        outline: none;
+        border: none;
+        text-decoration: none;
         color: white;
+        background: #FCB72B;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        cursor: pointer;
+        border: 3px solid transparent;
     }
-    
-    &__call {
-        display: inline-block;
-        font-size: 18px;
-        line-height: 28px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 10px 33px;
-        border: 2px solid #FFFFFF;
-        border-radius: 24px;
-    }
-    
-    
-}
 
-
-.header--open {
-    .header{
-        &__right {
-            top: 0;
-        }
+    .button:hover{
+        background-color: white;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+        transition: all 0.4s ease;
     }
 }
-
