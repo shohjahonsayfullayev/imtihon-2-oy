@@ -581,4 +581,105 @@ a {
   top: 50px;
   left: -140px;
   z-index: -8;
+}
+
+.riding {
+  margin-bottom: 200px;
+}
+.riding__container {
+  margin-bottom: 150px;
+}
+.riding__left {
+  max-width: 445px;
+  width: 100%;
+}
+.riding__heading {
+  font-family: "Space Mono";
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.riding__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.riding__right {
+  position: relative;
+}
+.riding__right::before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(64px);
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #E5ECF4;
+  border-radius: 50%;
+}
+.riding__right::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 741px;
+  height: 151px;
+  display: inline-block;
+  background-image: url("./../image/arrow-big.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.riding_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.riding_wrapper:nth-child(even) .riding__right {
+  order: -1;
+}
+.riding_wrapper:nth-child(even) .riding__right::before {
+  left: 0;
+  transform: translateX(calc(-100% - 64px));
+}
+.riding_wrapper:nth-child(even) .riding__right::after {
+  left: 50%;
+  transform: translateX(-50%) scaleX(-1);
+  width: 741px;
+  height: 151px;
+  display: inline-block;
+  background-image: url("./../image/arrow-big.svg");
+}
+.riding__img {
+  border-radius: 50%;
+}
+
+.button {
+  min-width: 180px;
+  max-width: 250px;
+  background: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background: #FCB72B;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 14px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+.button:hover {
+  background-color: white;
+  border: 3px solid #FCB72B;
+  color: #FCB72B;
+  transition: all 0.4s ease;
 }/*# sourceMappingURL=main.css.map */
