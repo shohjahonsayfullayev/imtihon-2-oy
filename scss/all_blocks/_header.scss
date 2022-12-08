@@ -1,8 +1,7 @@
 .header {
     margin-top: 20px;
     margin-bottom: 22px;
-    .container {
-    }
+ 
 
     .header__container {
         display: flex;
@@ -16,19 +15,20 @@
         width: 100%;
     }
 
-    .header__logo-img {
-    }
+ 
 
     .header__img-logo {
         margin-right: 58px;
     }
 
-    .header__nav {
-        
-    }
+
 
     .header__list {
         display: flex;
+
+        @media only screen and (max-width: 640px) {
+            display: none;
+        }
     }
 
     .header__item {
@@ -46,12 +46,16 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
-        color: #939CAA;
+        color: $dim-grey;
     }
 
-    .header__button {
-        
+
+    .header__button{
+        @media only screen and (max-width: 640px) {
+            display: none;
+        }
     }
+  
 
    
 }
@@ -63,8 +67,8 @@
     outline: none;
     border: none;
     text-decoration: none;
-    color: white;
-    background: #FCB72B;
+    color: $snow;
+    background: $yellow;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 14px;
@@ -74,8 +78,9 @@
 }
 
 .button:hover{
-    background-color: white;
-    border: 3px solid #FCB72B;
-    color: #FCB72B;
-    transition: all 0.4s ease;
+    background-color: $snow;
+    border: 3px solid $yellow;
+    color: $yellow;
+    transition: all 0.5s ease;
 }
+
