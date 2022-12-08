@@ -1,5 +1,6 @@
 .riding {
-    margin-bottom: 200px;
+    margin-bottom: 105px;
+    display: flex;
 }
 
 
@@ -60,7 +61,7 @@
         width: 741px;
         height: 151px;
         display: inline-block;
-        background-image: url("./../../images/");
+        background-image: url("./../../images/strelka.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -68,7 +69,7 @@
 }
 
 .riding__wrapper {
-    display: flex;
+    display: block
     align-items: center;
     justify-content: space-between;
 }

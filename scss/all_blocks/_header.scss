@@ -15,7 +15,9 @@
         width: 100%;
     }
 
- 
+    .header__wrapper:nth-child(2n){
+        flex-direction: column;
+    }
 
     .header__img-logo {
         margin-right: 58px;
