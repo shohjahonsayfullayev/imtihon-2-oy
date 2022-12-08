@@ -792,7 +792,7 @@ a {
   width: 741px;
   height: 151px;
   display: inline-block;
-  background-image: url("./../images/strelka.svg");
+  background-image: url("./../../images/");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
